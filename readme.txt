@@ -4,7 +4,7 @@ Tags: glossaire, lexique, dictionnaire, cpt, maillage interne
 Requires at least: 6.0
 Tested up to: 6.6
 Requires PHP: 8.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,7 +40,14 @@ Ajoutez simplement `archive-lexique_term.php` et/ou `single-lexique_term.php` da
 
 Oui : la liste "Voir aussi" est injectée via le filtre `the_content`, donc elle apparaît dès que votre template appelle `the_content()`, qu'il s'agisse du template par défaut du plugin ou d'un template de thème.
 
+= Que fait l'encart « Besoin d'aller plus loin ? » dans l'administration ? =
+
+Il propose aux administrateurs (capacité `manage_options`), uniquement sur l'écran principal du plugin, de contacter Websource, l'agence éditrice, pour un accompagnement sur mesure. Il n'apparaît jamais sur le site public ni dans les e-mails, se masque pour 30 jours par utilisateur (bouton « Masquer ») et ne fait aucune requête externe. Seul un clic sur « Nous contacter » ou « Prendre rendez-vous » ouvre le site websource.fr, avec dans l'adresse le nom du plugin, sa version, la version de WordPress et l'adresse de votre site (domaine uniquement) pour faciliter la réponse de Websource.
+
 == Changelog ==
+
+= 1.1.0 =
+* Nouveau : encart « Besoin d'aller plus loin ? » (accompagnement Websource) sur l'écran principal du plugin, réservé aux administrateurs, masquable 30 jours par utilisateur. Au clic sur « Nous contacter » / « Prendre rendez-vous », le nom et la version du plugin, la version de WordPress et le domaine du site sont transmis à Websource via l'URL (paramètres utm_* et ws_*). Aucune requête externe automatique.
 
 = 1.0.0 =
 * Version initiale.

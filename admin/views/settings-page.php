@@ -38,4 +38,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 		);
 		?>
 	</p>
+
+	<?php WL_Support_Box::render(); ?>
 </div>
